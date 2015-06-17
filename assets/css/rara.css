@@ -1,0 +1,180 @@
+/*
+*
+* FEDORA INDONESIA (www.fedora.or.id)
+* AUTHOR : ZEA
+* WEB : www.zealab.com
+* 
+*/
+
+
+/*GLOBAL*/
+
+html {
+	margin-top: 0px !important;
+}
+
+body {
+	font-family: 'Raleway', sans-serif !important;	
+}
+
+.blog-inde-wrapper {
+	background-color: #3DC0F1;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+
+
+/*HEADER*/
+
+#masthead {
+	background: #2BA3D4 url('http://getuikit.com/docs/images/bg_teaser.svg') no-repeat center center;
+	height: 600px;
+}
+
+.logo {
+	text-align: center;
+}
+
+.logo img {
+	width: 320px;
+	height: 100px;
+}
+
+.indonesia{
+	font-family: 'Bree Serif', serif !important;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 6em;
+	font-weight: bolder;
+}
+
+em#fedora-motto {
+	color: #FFFFFF;
+}
+
+.header-wrapper {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+
+/*INDEX*/
+
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #FFFFFF;
+    padding: 50px 50px 50px 50px;
+}
+
+.strike > span {
+    position: relative;
+    display: inline-block;
+}
+
+.strike > span:before,
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: #FFFFFF;
+}
+
+.strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.strike h3 {
+	margin-top: 10px ;
+	margin-bottom: 10px;
+}
+
+.post-box {
+	width: 100%;
+	height: auto;
+	border: 1px solid #FFFFFF;
+	border-radius: 5px;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+	background-color: #FFFFFF;
+}
+
+.featured-image-wrapper {
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.featured-image-wrapper img {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.nav-button {
+	text-align: center;
+}
+
+.nav-button a {
+	color: #FFFFFF !important;
+}
+
+.nav-button .row {
+	margin-bottom: 0px !important;
+	padding-bottom: 30px;
+}
+
+
+/*SINGLE POST*/
+
+.single-post-body {
+	background-color: #FFFFFF;
+}
+
+/*FOOTER*/
+
+.site-footer {
+	background-color: #34495e;
+	width: 100%;
+	height: auto;
+}
+
+.footer-grid {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.footer-grid p {
+	color: #FFFFFF;
+}
+
+.footer-widget {
+	text-align: left !important;
+}
+
+.footer-widget ul {
+	margin-left: 0px !important;
+}
+
+.site-info {
+	color: #FFFFFF;
+}
+
+.site-info a {
+	color: #FFFFFF;
+}
