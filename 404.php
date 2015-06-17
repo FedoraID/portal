@@ -9,46 +9,35 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+						<section class="error-404 not-found">
+							<header class="page-header-404">
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'fedora-id' ); ?></h1>
-				</header><!-- .page-header -->
+							<div align="center">
+								<img src="http://crajun.com/wp-content/uploads/2014/10/morpheus_meme.jpg" />
+							</div>
 
-				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'fedora-id' ); ?></p>
 
-					<?php get_search_form(); ?>
+								<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'fedora-id' ); ?></h1>
+							</header><!-- .page-header -->
 
-					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+							<div class="page-content">
 
-					<?php if ( fedora_id_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'fedora-id' ); ?></h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
-					<?php endif; ?>
+								<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'fedora-id' ); ?></p>
 
-					<?php
-						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'fedora-id' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-					?>
+								<?php get_search_form(); ?>
 
-					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
+								<?php if ( fedora_id_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+							
+								<?php endif; ?>
 
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
+							</div><!-- .page-content -->
+						</section><!-- .error-404 -->
+					</div>
+				</div>
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

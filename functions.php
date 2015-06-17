@@ -127,7 +127,7 @@ function fedora_id_scripts() {
 
 	// ================ // CSS // ================ //
 
-	// BOOTSTRAP CORE
+	// MATERIALIZE CORE
 	wp_register_style('materializeCSS', get_template_directory_uri() . '/assets/css/materialize.min.css');    
     wp_enqueue_style('materializeCSS');
 
@@ -140,7 +140,7 @@ function fedora_id_scripts() {
     wp_enqueue_style('custom-style');
 
     // GOOGLE FONT
-    wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Raleway');
+    wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Montserrat');
     wp_enqueue_style( 'googleFonts');
 
     // GOOGLE FONT 2
@@ -154,7 +154,7 @@ function fedora_id_scripts() {
     wp_enqueue_script("jquery");
 
     // MATERIALIZE JS
-    wp_enqueue_script( 'materializeJS', get_template_directory_uri() . '/assets/js/materialize.min.js', true );
+    wp_enqueue_script( 'materializeJS', get_template_directory_uri() . '/js/materialize.js', array(), '20120207', true );
 
     // _S NAVIGATION JS
 	wp_enqueue_script( 'fedora-id-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );

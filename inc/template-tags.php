@@ -83,16 +83,17 @@ function fedora_id_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'fedora-id' ),
+		esc_html_x( '%s', 'post date', 'fedora-id' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
 	$byline = sprintf(
-		esc_html_x( 'by %s', 'post author', 'fedora-id' ),
-		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+		esc_html_x( '%s', 'post author', 'fedora-id' ),
+		'<i class="mdi-action-face-unlock"></i><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
-	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
+	echo '
+      <i class="mdi-device-access-time"></i>' . $posted_on . '</span><span class="byline"> ' . $byline . ''; // WPCS: XSS OK.
 
 }
 endif;
@@ -107,7 +108,7 @@ function fedora_id_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( esc_html__( ', ', 'fedora-id' ) );
 		if ( $categories_list && fedora_id_categorized_blog() ) {
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'fedora-id' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+			printf( '<i class="mdi-action-loyalty"></i>' . esc_html__( 'Posted in %1$s', 'fedora-id' ) . '', $categories_list ); // WPCS: XSS OK.
 		}
 
 		/* translators: used between list items, there is a space after the comma */
@@ -118,12 +119,12 @@ function fedora_id_entry_footer() {
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
+		echo '<p><i class="mdi-communication-forum"></i>';
 		comments_popup_link( esc_html__( 'Leave a comment', 'fedora-id' ), esc_html__( '1 Comment', 'fedora-id' ), esc_html__( '% Comments', 'fedora-id' ) );
-		echo '</span>';
+		echo '</p>';
 	}
 
-	edit_post_link( esc_html__( 'Edit', 'fedora-id' ), '<span class="edit-link">', '</span>' );
+	// edit_post_link( esc_html__( 'Edit', 'fedora-id' ), '<span class="edit-link">', '</span>' );
 }
 endif;
 
