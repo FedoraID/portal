@@ -39,6 +39,12 @@ get_header(); ?>
 				</div>
 			</div>
 
+			<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+				<a class="btn-floating btn-large blue" href="<?php echo site_url(); ?>" title="Back to Home">
+					<i class="mdi-action-home"></i>
+				</a>
+			</div>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
