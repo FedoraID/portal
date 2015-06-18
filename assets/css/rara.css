@@ -14,7 +14,8 @@ html {
 }
 
 body {
-	font-family: 'Montserrat', sans-serif !important;	
+	font-family: 'Montserrat', sans-serif !important;
+	background-color: #FFFFFF;
 }
 
 .blog-inde-wrapper {
@@ -48,6 +49,14 @@ i {
 
 .mdi-communication-forum {
 	color: #34495e;
+}
+
+.mdi-content-flag {
+	color: #34495e;
+}
+
+.mdi-action-favorite {
+	color: #e74c3c;
 }
 
 .customize-support {
@@ -173,6 +182,9 @@ em#fedora-motto {
 	padding-bottom: 30px;
 }
 
+.entry-footer {
+	font-size: 0.9em;
+}
 
 /*SINGLE POST*/
 

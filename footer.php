@@ -31,9 +31,7 @@
 				<div class="row">
 					<div class="col s12">
 						<div class="site-info">
-							<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'fedora-id' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'fedora-id' ), 'WordPress' ); ?></a>
-							<span class="sep"> | </span>
-							<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'fedora-id' ), 'fedora-id', '<a href="http://zealab.com" rel="designer">Zea</a>' ); ?>
+							<p>Theme made with <i class="mdi-action-favorite"></i> by <a href="http://zealab.com">Zea</a>
 						</div><!-- .site-info -->
 					</div>
 				</div>

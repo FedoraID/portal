@@ -6,7 +6,7 @@
  *
  * @package fedoraid
  */
-
+ 
 if ( ! function_exists( 'the_posts_navigation' ) ) :
 /**
  * Display navigation to next/previous set of posts when applicable.
@@ -114,7 +114,7 @@ function fedora_id_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'fedora-id' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'fedora-id' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			printf( '<i class="mdi-content-flag"></i>' . esc_html__( '%1$s', 'fedora-id' ) . '', $tags_list ); // WPCS: XSS OK.
 		}
 	}
 
